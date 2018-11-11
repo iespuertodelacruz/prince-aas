@@ -11,6 +11,3 @@ python-dotenv = "*"
 "flake8" = "*"
 yapf = "*"
 rope = "*"
-
-[requires]
-python_version = "3.7"
