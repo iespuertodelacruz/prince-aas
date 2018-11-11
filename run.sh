@@ -3,4 +3,4 @@
 
 cd "$(dirname "$0")"
 PYTHON_VENV=$(pipenv --venv)
-exec uwsgi --home $PYTHON_VENV --ini uwsgi.ini
+exec pipenv run uwsgi --home $PYTHON_VENV --ini uwsgi.ini
