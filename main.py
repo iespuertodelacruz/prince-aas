@@ -26,9 +26,9 @@ def handle_file(file_id):
 def hello():
     htmlfile_path = handle_file('htmlfile')
     for i in range(NUM_ALLOWED_CSSFILES):
-        handle_file('cssfile{}'.format(i+1))
+        handle_file(f'cssfile{i+1}')
     for i in range(NUM_ALLOWED_IMGFILES):
-        handle_file('imgfile{}'.format(i+1))
+        handle_file(f'imgfile{i+1}')
 
-    os.system('prince {} -o {}'.format(htmlfile_path, PDF_OUTPUT_PATH))
+    os.system(f'prince {htmlfile_path} -o {PDF_OUTPUT_PATH}')
     return send_file(PDF_OUTPUT_PATH)
