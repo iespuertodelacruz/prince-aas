@@ -7,6 +7,5 @@ def deploy():
     local('git push')
     with cd('~/prince-aas'):
         run('git pull')
-        run('pipenv install')
-        run('stop.sh')
-        run('start.sh')
+        run('./stop.sh')
+        run('./start.sh')
