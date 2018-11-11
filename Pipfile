@@ -6,8 +6,10 @@ name = "pypi"
 [packages]
 flask = "*"
 python-dotenv = "*"
+uwsgi = "*"
 
 [dev-packages]
 "flake8" = "*"
 yapf = "*"
 rope = "*"
+"fabric3" = "*"
