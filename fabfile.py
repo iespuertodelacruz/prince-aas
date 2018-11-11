@@ -8,4 +8,5 @@ def deploy():
     with cd('~/web'):
         run('git pull')
         run('pipenv install')
-        run('supervisorctl restart prince-aas')
+        run('stop.sh')
+        run('start.sh')
